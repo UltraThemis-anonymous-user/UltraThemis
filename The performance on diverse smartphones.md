@@ -1,3 +1,6 @@
+# Cross-device Performance of UltraThemis
+UltraThemis performs well when be intalled new smartphones. We achieve a detection accuracy of 95.2\% on new devices, with a precision of 97.0\% and a recall of 94.1\% on 12 new devices when be trained on 6 smartphones. The cross-device performance improves with more devices that will be included in the training datasets. Our proposed UltraThemis is able to realize a `plug-and-play' trustworthy speech acquisition in various real-world scenes.
+# Accuracy
 |                                 **Train \ Test**                                 |  Mi 10  | Motorola Edge S | HUAWEI P20 Pro |  iQOO 3  | OnePlus 9 | VIVO NEX 3 | Honor V30 | Oppo Find X2 | Google Pixel 3 | Redmi K30 Pro | Samsung Galaxy A51 | Samsung Galaxy S21 | VIVO S6 | **MEAN** |
 |:--------------------------------------------------------------------------------:|:-------:|:---------------:|:--------------:|:--------:|:---------:|:----------:|:---------:|:------------:|:--------------:|:-------------:|:------------------:|:------------------:|:-------:|:--------:|
 |                            **Acoustic Sampling rate**                            |  48 kHz |     44.1 kHz    |     48 kHz     | 44.1 kHz |   48 kHz  |   48 kHz   |  44.1 kHz |   44.1 kHz   |     48 kHz     |    44.1 kHz   |       48 kHz       |       48 kHz       |  48 kHz |     \    |
