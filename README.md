@@ -4,7 +4,7 @@ where audible signals can be modulated onto the ultrasonic spectrum due to micro
 
 # Repository structure
 ### src  
-+ This folder contains the source code which realizes audio tamper detection based on only DFS.    
++ This folder contains the source code which realizes audio tamper detection based on only DFS in case that some smartphones presents no obvious nonlinearity.    
 ### The performance on diverse smartphones.md  
 + This file records the result of our system on different mobile phones, including accuracy, precision and recall.  
 
