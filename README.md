@@ -115,6 +115,7 @@ Parameters of two-stream
 + batch_size: 64
 + learning_rate: 1e-4
 + optimizer: Adam
++ scheduler: StepLR(step_size=5, gamma=0.25)
 + threshold1: 0.8
 + threshold2: 0.4
 + threshold3: 0.4
