@@ -61,7 +61,7 @@ def main():
                 print("Epoch: {}/{} | Step: {}/{} | test loss: {:.4f} | acc: {:.4f}".format(epoch+1, args.epoch//10000, step+1, len(db), loss_total/len(db_test), accs_total/len(db_test)))
                 loss_total = 0
                 accs_total = 0
-                maml.save_model("./model/sin_20_23k_3/meta_4_shot.pkl")
+                maml.save_model(args.model_save_path)
 
 
 if __name__ == '__main__':
