@@ -28,7 +28,7 @@ Ensure you have:
 # How to use
 Here's my recommendation on what order to run things:
 
-MTL(realizes audio tamper detection based on only DFS):
+<strong>MTL</strong>(realizes audio tamper detection based on only DFS):
 
 1 - prepare your dataset and alter the parameter in src/config.py
 
@@ -44,7 +44,7 @@ MTL(realizes audio tamper detection based on only DFS):
 
 > python src/MTL/train_MTL.py
 
-two-stream(realizes audio tamper detection based on both DFS and ANL):
+<strong>two-stream</strong>(realizes audio tamper detection based on both DFS and ANL):
 
 1 - prepare your dataset and alter the parameter in src/config.py
 
