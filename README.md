@@ -59,6 +59,11 @@ Here are the hyper-parameters that you can setup
 + k_spt: k shot for support set
 + k_qry: k shot for query set
 + batch_size: batch size
++ task_num: meta batch size
++ meta_lr: meta-level outer learning rate
++ update_lr: task-level inner update learning rate
++ update_step: task-level inner update steps
++ update_step_test: update steps for finetunning
 
 3 - train content-consistency network and homology network:
 
@@ -83,3 +88,35 @@ Here are the hyper-parameters that you can setup
 + threshold1: the threshold for content-consistency network
 + threshold2: the threshold for homology network
 + threshold3: the threshold for meta-learning network
+
+# Parameter Settings
+
+Parameters of STFT
++ window size: 4096
++ nfft : 4096
++ hop length: 10ms
++ the length of every audio segment: 0.5s
+
+Parameters of meta-learning
++ epoch: 60000
++ n_way: 5
++ k_spt: 4
++ k_qry: 10
++ batch_size: 8
++ task_num: 4
++ meta_lr: 1e-3
++ update_lr: 0.01
++ update_step: 5
++ update_step_test: 10
++ optimizer: Adam
+
+Parameters of two-stream
++ epoch: 50
++ batch_size: 64
++ learning_rate: 1e-4
++ optimizer: Adam
++ threshold1: 0.8
++ threshold2: 0.4
++ threshold3: 0.4
+
+
