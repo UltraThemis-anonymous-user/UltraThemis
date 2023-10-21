@@ -48,9 +48,13 @@ Here's my recommendation on what order to run things:
 
 1 - prepare your dataset and alter the parameter in src/config.py
 
-2 - train meta-learning model:
+2 - preprocess data for meta-learning training
 
-> python src/two-stream/train_meta.py
+> python src/two-stream/meta-learning/meta_data_preprocess.py
+
+3 - train meta-learning model:
+
+> python src/two-stream/meta-learning/train_meta.py
 
 Here are the hyper-parameters that you can setup
 + model_save_path: the path where the model will be saved
@@ -65,7 +69,11 @@ Here are the hyper-parameters that you can setup
 + update_step: task-level inner update steps
 + update_step_test: update steps for finetunning
 
-3 - train content-consistency network and homology network:
+4 - preprocess data for content-consistency network and homology network training
+
+> python src/two-stream/data_preprocess.py
+
+5 - train content-consistency network and homology network:
 
 > python src/train.py
 
@@ -77,7 +85,7 @@ Here are the hyper-parameters that you can setup
 + learning_rate: learning rate
 + is_reload_model: load pre-trained model or not
 
-4 - test overall performance
+6 - test overall performance
 > python src/test.py
 
 Here are the hyper-parameters that you can setup
